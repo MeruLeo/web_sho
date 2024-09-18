@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Graphik;
+  src: url("/src/assets/font/Graphik\ Arabic\ Black.otf");
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url("/src/assets/font/Vazir-Medium.ttf");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  @apply outline-none;
+}
+
+body {
+  @apply bg-bg-light font-Vazir text-lg sm:text-xl;
+}

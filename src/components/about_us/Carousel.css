@@ -1,0 +1,85 @@
+.slideC {
+  position: relative;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  width: 362px;
+  height: 272px;
+  margin: 0 auto;
+}
+
+.slide {
+  width: 362px;
+  transition: transform 500ms ease 0s, opacity 500ms ease 0s,
+    visibility 500ms ease 0s;
+  position: absolute;
+  top: 0;
+  border-radius: 35px;
+}
+
+/* 3D reflection effect */
+.reflection {
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  bottom: -60px;
+  border-radius: 12px;
+  transition: transform 500ms ease 0s, opacity 500ms ease 0s,
+    visibility 500ms ease 0s;
+}
+
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sliderContent {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 30px;
+  align-items: flex-start;
+}
+
+.sliderContent h2 {
+  margin: 16px 0;
+}
+
+.sliderContent p {
+  margin: 0;
+}
+
+/* normal css */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+
+.btns {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btns .btn {
+  cursor: pointer;
+  margin: 0 8rem;
+  background-color: #222831;
+  color: #ffd369;
+  border: #ffd369 1px solid;
+  width: 2rem;
+  height: 2rem;
+  padding: 1rem;
+  transition: all 0.3s ease;
+  border-radius: 50%;
+}
+
+.btns .btn:hover {
+  background-color: #ffd369;
+  color: #222831;
+}
