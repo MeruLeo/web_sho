@@ -133,6 +133,12 @@ const Main = () => {
           icon={
             <i className="fi fi-tr-introduction flex justify-center items-center"></i>
           }
+          clickEvent={() => {
+            const element = document.getElementById("contact_us");
+            if (element) {
+              element.scrollIntoView({ behavior: "smooth" });
+            }
+          }}
         />
       </div>
 
